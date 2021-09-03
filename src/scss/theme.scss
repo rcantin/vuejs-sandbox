@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;700;900&display=swap');
+
+// @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap");
+
+@import "./pallette.scss";
+@import "./tdcfont.scss";
+
+$font-family-base: "Source Sans Pro", sans-serif;
+.tdc-font {
+    font-family: "You Are Loved", "Source Sans Pro", Arial, sans-serif !important;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+$headings-font-weight:        700;
+
+$navbar-dark-color:                 $white;
+$navbar-dark-hover-color:           $primary;
+$navbar-dark-active-color:          $primary;
+$navbar-dark-disabled-color:        rgba($white, .25);
+$navbar-dark-toggler-border-color:  transparent;
+
+$modal-backdrop-opacity:            .2;
+
+$btn-border-radius:           4rem;
+$btn-border-radius-sm:        3rem;
+$btn-border-radius-lg:        5rem;
+.btn.glass {
+    border-width: 0;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.2) 45%, rgba(0, 0, 0, 0) 45%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0.2) 100%);
+    -moz-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.4);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.4);
+  }
+  
+@import "../../node_modules/bootstrap/scss/bootstrap";

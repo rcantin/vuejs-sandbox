@@ -1,0 +1,44 @@
+$primary:rgb(237, 14, 123);
+$secondary:rgb(132, 77, 158);
+$info:rgb(0, 149, 218);
+$success:rgb(0, 175, 0);
+$warning:rgb(253, 182, 13);
+$danger:rgb(204, 0, 0);
+$dark:rgb(0, 0, 0);
+$white:rgb(255, 255, 255);
+$pink:rgb(237, 14, 123);
+$purple:rgb(132, 77, 158);
+$blue:rgb(0, 149, 218);
+$yellow:rgb(255, 182, 0);
+$orange:rgb(255, 110, 0);
+$green:rgb(51, 204, 0);
+$red:rgb(255, 0, 0);
+$black:rgb(0, 0, 0);
+$kinstruct:#618aa3;
+$barbella:#9464ac;
+$familytree:#ff99ff;
+$birthday:#ff7dff;
+
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "info": $info,
+  "success": $success,
+  "warning": $warning,
+  "danger": $danger,
+  "dark": $dark,
+  "white": $white,
+  "pink": $pink,
+  "purple": $purple,
+  "blue": $blue,
+  "yellow": $yellow,
+  "orange": $orange,
+  "green": $green,
+  "red": $red,
+  "black": $black,
+  "kinstruct": $kinstruct,
+  "barbella": $barbella,
+  "familytree": $familytree,
+  "birthday": $birthday,
+);
