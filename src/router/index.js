@@ -28,9 +28,12 @@ const routes = [
   },
 ];
 
+console.log("Running in " + process.env.NODE_ENV + " mode (process.env.NODE_ENV)");
+console.log("Base URL is " + process.env.BASE_URL + " (process.env.BASE_URL)");
+
 const router = new VueRouter({
   mode: "history",
-  base: "/vuejs-sandbox/",
+  base: process.env.BASE_URL,
   routes,
 });
 
