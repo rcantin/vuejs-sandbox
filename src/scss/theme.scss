@@ -1,36 +1,48 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;700;900&display=swap');
-
-// @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;700;900&display=swap");
 
 @import "./pallette.scss";
-@import "./tdcfont.scss";
+@import "./BgBlend.scss";
+
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+
+$body-bg: $light;
 
 $font-family-base: "Source Sans Pro", sans-serif;
-.tdc-font {
-    font-family: "You Are Loved", "Source Sans Pro", Arial, sans-serif !important;
-    text-transform: uppercase;
-    font-weight: 400;
-}
 
-$headings-font-weight:        700;
+$headings-font-weight: 700;
+$headings-margin-bottom: 0.5em;
 
-$navbar-dark-color:                 $white;
-$navbar-dark-hover-color:           $primary;
-$navbar-dark-active-color:          $primary;
-$navbar-dark-disabled-color:        rgba($white, .25);
-$navbar-dark-toggler-border-color:  transparent;
+// $offcanvas-padding-y: $modal-inner-padding !default;
+// $offcanvas-padding-x: $modal-inner-padding !default;
+// $offcanvas-horizontal-width: 400px !default;
+// $offcanvas-vertical-height: 30vh !default;
+// $offcanvas-transition-duration: 0.3s !default;
+// $offcanvas-border-color: $modal-content-border-color !default;
+// $offcanvas-border-width: $modal-content-border-width !default;
+// $offcanvas-title-line-height: $modal-title-line-height !default;
+// $offcanvas-bg-color: darken($dark, 20%);
+// $offcanvas-color:                   $modal-content-color !default;
+$offcanvas-body-backdrop-color: rgba($dark, 0.6);
+// $offcanvas-box-shadow:              $modal-content-box-shadow-xs !default;
 
-$modal-backdrop-opacity:            .2;
+// $navbar-dark-color: $white;
+// $navbar-dark-hover-color: $light;
+// $navbar-dark-active-color: $light;
+// $navbar-dark-disabled-color: rgba($white, 0.25);
+// $navbar-dark-toggler-border-color: transparent;
 
-$btn-border-radius:           4rem;
-$btn-border-radius-sm:        3rem;
-$btn-border-radius-lg:        5rem;
-.btn.glass {
-    border-width: 0;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.2) 45%, rgba(0, 0, 0, 0) 45%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0.2) 100%);
-    -moz-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.4);
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.4);
-    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.4);
-  }
-  
+// $navbar-toggler-focus-width: 0;
+
+// $dropdown-dark-color: $white;
+// $dropdown-dark-bg: $dark;
+// $dropdown-dark-border-color: $dark;
+// $dropdown-dark-link-color: $white;
+// $dropdown-dark-link-hover-color: $primary;
+// $dropdown-dark-link-hover-bg: $dark;
+// $dropdown-dark-link-active-color: $primary;
+// $dropdown-dark-link-active-bg: $dark;
+
+$modal-backdrop-opacity: 0.2;
+
 @import "../../node_modules/bootstrap/scss/bootstrap";

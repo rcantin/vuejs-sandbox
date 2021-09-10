@@ -1,6 +1,14 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
+import About from "../views/About.vue";
+import ContactUs from "../views/ContactUs.vue";
+import Classes from "../views/Classes.vue";
+import Grid from "../views/Grid.vue";
+import BgBlend from "../views/BgBlend.vue";
+import OffCanvas from "../views/OffCanvas.vue";
+import Posts from "../views/posts/Posts.vue";
+import PostDetail from "../views/posts/PostDetail.vue";
 
 Vue.use(VueRouter);
 
@@ -13,23 +21,45 @@ const routes = [
   {
     path: "/about",
     name: "About",
-    // this generates a separate chunk (about.[hash].js) for this route which is lazy-loaded when the route is visited
-    component: () => import("../views/About.vue"),
+    component: About,
   },
   {
     path: "/contactus",
     name: "Contact Us",
-    component: () => import("../views/ContactUs.vue"),
+    component: ContactUs,
   },
   {
     path: "/classes",
-    name: "Class List",
-    component: () => import("../views/Classes.vue"),
+    name: "ClassList",
+    component: Classes,
+  },
+  {
+    path: "/grid",
+    name: "Grid",
+    component: Grid,
+  },
+  {
+    path: "/bgblend",
+    name: "BgBlend",
+    component: BgBlend,
+  },
+  {
+    path: "/offcanvas",
+    name: "OffCanvas",
+    component: OffCanvas,
+  },
+  {
+    path: "/posts",
+    name: "Posts",
+    component: Posts,
+  },
+  {
+    path: "/posts/:id",
+    name: "PostDetail",
+    component: PostDetail,
+    props: true, // allow passing of props instead of more complex params
   },
 ];
-
-console.log("Running in " + process.env.NODE_ENV + " mode (process.env.NODE_ENV)");
-console.log("Base URL is " + process.env.BASE_URL + " (process.env.BASE_URL)");
 
 const router = new VueRouter({
   mode: "history",

@@ -1,0 +1,37 @@
+:root {
+  --clr-primary: #ee6352;
+  --clr-secondary: #d16e8d;
+  --clr-accent: #f7f7ff;
+  --clr-gradient: linear-gradient(-90deg, red, blue);
+}
+
+.bg-blending {
+  display: flex;
+  gap: calc(10px + 2%);
+
+  & * {
+    padding: 6rem;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .bgblend-1 {
+    background-color: var(--clr-primary);
+    background-image: url(https://picsum.photos/id/1005/600/600);
+    background-blend-mode: screen;
+    clip-path: circle();
+  }
+  .bgblend-2 {
+    background-color: var(--clr-secondary);
+    background-image: url(https://picsum.photos/id/1001/600/600);
+    background-blend-mode: multiply;
+    clip-path: polygon(0 0, 100% 0%, 100% 80%, 0% 100%);
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+  }
+  .bgblend-3 {
+    background-color: pink;
+    background-image: url(https://picsum.photos/id/1006/600/600);
+    background-blend-mode: overlay;
+  }
+}
