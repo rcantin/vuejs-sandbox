@@ -4,7 +4,9 @@
     <table class="table table-sm table-striped">
       <thead>
         <tr>
-          <th>Post</th>
+          <th>
+            Posts <span class="fw-light small ps-3">({{ data.length }} posts found)</span>
+          </th>
           <th></th>
         </tr>
       </thead>

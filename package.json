@@ -10,6 +10,7 @@
   },
   "homepage": "https://rcantin.github.io/vuejs-sandbox",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
     "@popperjs/core": "^2.9.3",
     "axios": "^0.21.1",
     "bootstrap": "^5.0.0-beta3",

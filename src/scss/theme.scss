@@ -9,39 +9,35 @@
 $body-bg: $light;
 
 $font-family-base: "Source Sans Pro", sans-serif;
+$link-decoration: none;
 
-$headings-font-weight: 700;
+$form-label-margin-bottom: 0.25rem;
+
+$btn-font-weight: 900;
+.btn {
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+.grow {
+  transition: all 0.1s ease-in-out;
+}
+.grow:hover {
+  transform: scale(1.025);
+  filter: brightness(110%);
+}
+.grow a {
+  text-decoration: none !important;
+}
+
+$headings-font-weight: 900;
 $headings-margin-bottom: 0.5em;
 
-// $offcanvas-padding-y: $modal-inner-padding !default;
-// $offcanvas-padding-x: $modal-inner-padding !default;
-// $offcanvas-horizontal-width: 400px !default;
-// $offcanvas-vertical-height: 30vh !default;
-// $offcanvas-transition-duration: 0.3s !default;
-// $offcanvas-border-color: $modal-content-border-color !default;
-// $offcanvas-border-width: $modal-content-border-width !default;
-// $offcanvas-title-line-height: $modal-title-line-height !default;
-// $offcanvas-bg-color: darken($dark, 20%);
-// $offcanvas-color:                   $modal-content-color !default;
+$offcanvas-horizontal-width: 380px;
 $offcanvas-body-backdrop-color: rgba($dark, 0.6);
-// $offcanvas-box-shadow:              $modal-content-box-shadow-xs !default;
 
-// $navbar-dark-color: $white;
-// $navbar-dark-hover-color: $light;
-// $navbar-dark-active-color: $light;
-// $navbar-dark-disabled-color: rgba($white, 0.25);
-// $navbar-dark-toggler-border-color: transparent;
-
-// $navbar-toggler-focus-width: 0;
-
-// $dropdown-dark-color: $white;
-// $dropdown-dark-bg: $dark;
-// $dropdown-dark-border-color: $dark;
-// $dropdown-dark-link-color: $white;
-// $dropdown-dark-link-hover-color: $primary;
-// $dropdown-dark-link-hover-bg: $dark;
-// $dropdown-dark-link-active-color: $primary;
-// $dropdown-dark-link-active-bg: $dark;
+$dropdown-dark-bg: $dark;
+$dropdown-dark-border-color: $dark;
 
 $modal-backdrop-opacity: 0.2;
 

@@ -8,7 +8,7 @@
         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body">
-        <div class="row row-cols-3 gx-2 gy-5 text-center fw-light">
+        <div class="row row-cols-3 gx-2 gy-5 text-center fw-bold small text-uppercase">
           <div class="col">
             <img src="https://picsum.photos/350/200?random=1" alt="..." class="img-fluid" style="clip-path: circle()" />
             <div>Something</div>

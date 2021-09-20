@@ -1,12 +1,16 @@
 <template>
   <div class="pb-5">
-    <div class="d-flex justify-content-between align-items-center">
-      <h1>Post Details</h1>
-      <router-link :to="{ name: 'Posts' }" class="btn btn-primary px-5">Back</router-link>
+    <div class="d-flex justify-content-start align-items-center mb-4">
+      <div class="pe-3">
+        <router-link :to="{ name: 'Posts' }" class="btn btn-primary"><i class="fas fa-chevron-left me-2"></i>Back</router-link>
+      </div>
+      <h1 class="mb-0">Post Details</h1>
     </div>
     <h4 class="text-capitalize">{{ post.title }}</h4>
     <div class="pb-5">{{ post.body }}</div>
-    <h5>Comments</h5>
+    <h5>
+      Comments <span class="fw-light small ps-3">({{ comments.length }} comments found)</span>
+    </h5>
     <table class="table table-striped">
       <thead>
         <tr>
@@ -60,8 +64,8 @@ export default {
     },
   },
   mounted() {
-    this.getPost();
     this.getComments();
+    this.getPost();
   },
 };
 </script>
